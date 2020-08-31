@@ -1,0 +1,142 @@
+.blog-home-img {
+  position: relative;
+  margin-top: -100px;
+  z-index: -1;
+}
+
+// using flex to make two items float side-by-side
+.main-blog-container {
+  margin-top: -170px;
+  position: relative;
+
+  .blog-heading {
+    color: white;
+    padding-bottom: 130px;
+  }
+
+  // top-up image in the backgroound img
+  .blog-top-off {
+    margin-left: auto;
+    margin-top: -120px;
+    // creating a drop-shadow effect
+    filter: drop-shadow(-1rem 1rem 0px #ff8327);
+  }
+
+  .second-split-part {
+    margin-top: -10px;
+    z-index: 1;
+    width: 60%;
+  }
+
+  .split-menu {
+    background-color: #111010;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .right-container {
+      border: 5px solid #ff8327;
+      border-right: none;
+      border-top: none;
+      padding: 6rem;
+      margin-left: -16px;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.left-container {
+  padding-top: 100px;
+
+  .left-container-img img {
+    width: 300px;
+    filter: drop-shadow(1rem 0 0px #220303);
+  }
+
+  .left-container-content {
+    background-color: #220303;
+    width: 250px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: -1rem;
+    padding: 20px;
+
+    a {
+      color: #ff8327;
+    }
+
+    // adding small red-bullets infront of our li items
+    ul li::before {
+      content: "\2022";
+      color: #bf2603;
+      display: inline-block;
+      width: 1em;
+    }
+  }
+}
+
+.comment {
+  padding: 50px;
+
+  .comment-split {
+    display: flex;
+  }
+
+  .comment-img {
+    width: 200px;
+    padding-right: 30px;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+
+// making fieldset usable for the clients
+fieldset {
+  padding: 0 30px 30px;
+
+  .client-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .red-button {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ff8327;
+    background-color: inherit;
+    margin-top: 40px;
+    color: white;
+    font-size: 20px;
+
+    padding: 40px;
+  }
+
+  input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ff8327;
+    background-color: inherit;
+    color: white;
+  }
+}
+
+// added gap by defining margin
+.top-spaced {
+  margin-top: 40px;
+}
+
+.spaced-bottom {
+  margin-bottom: 20px;
+}

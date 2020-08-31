@@ -1,0 +1,52 @@
+.contact-container {
+  .contact-split-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .client-fillup {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  fieldset {
+    background-color: #220303;
+    padding: 50px;
+    margin-top: -100px;
+    margin-right: 100px;
+    filter: drop-shadow(1rem 1rem 0 #ff8327);
+    width: 800px;
+    margin-bottom: 100px;
+    color: white;
+  }
+
+// defining input area to make it look and work better
+  input,
+  textarea {
+    width: 100%;
+    background: inherit;
+    border-color: white;
+    font-family: "Chathura", sans-serif;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+  }
+}
+
+.icon-info .fab {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.address-content {
+  margin: 120px;
+}
+
+.contact-heading {
+  margin-top: -50px;
+}
